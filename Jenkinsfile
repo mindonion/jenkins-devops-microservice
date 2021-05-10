@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('Integration Test') {
 			steps {
-				echo "Integration Test
+				echo "Integration Test"
 			}
 		}
 	}
