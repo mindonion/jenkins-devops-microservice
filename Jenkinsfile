@@ -51,7 +51,7 @@ pipeline {
 			steps {
 				//"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"
 				script {
-					dockerImage("dockerlab001/private-test-repo:${env.BUILD_TAG}")
+					dockerImage = docker.build("dockerlab001/private-test-repo:${env.BUILD_TAG}")
 				}
 			}
 
