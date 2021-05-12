@@ -60,7 +60,7 @@ pipeline {
 		stage('Push Docker Image') {
 			steps {
 				script {
-					docker.withRegistry('', 'bb9a874f-44d1-43b7-b31f-12072eb6d5cb') {
+					docker.withRegistry('', 'docker-lab-creds') {
 						dockerImage.push();
 						dockerImage.push('latest');
 					}
